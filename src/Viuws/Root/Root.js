@@ -1,8 +1,8 @@
-import './Root.css';
+import styles from './Root.module.scss';
 
 function Root() {
   return (
-    <div className="App">
+    <div className={styles.root}>
 
     </div>
   );
