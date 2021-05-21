@@ -1,0 +1,2 @@
+(this["webpackJsonpadambodzak.github.io"]=this["webpackJsonpadambodzak.github.io"]||[]).push([[0],{10:function(t,e,o){"use strict";o.r(e);var n=o(1),i=o.n(n),c=o(3),a=o.n(c),r=o(4),d=o.n(r),s=o(0);var b=function(){return Object(s.jsx)("div",{className:d.a.root,children:Object(s.jsx)("p",{children:"Tu b\u0119dzie moje portfolio"})})};a.a.render(Object(s.jsx)(i.a.StrictMode,{children:Object(s.jsx)(b,{})}),document.getElementById("root"))},4:function(t,e,o){}},[[10,1,2]]]);
+//# sourceMappingURL=main.c8ce5492.chunk.js.map
