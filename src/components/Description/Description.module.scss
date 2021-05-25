@@ -1,15 +1,22 @@
 .description {
-
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-weight: 700;
 }
 .header1 {
-
+    padding: 72px 0 0 0;
+    font-size: 32px;
 }
 .paragraph {
-
-}
-.mail {
-
+    padding: 24px 0 72px 0;
+    font-size: 20px;
 }
 .special {
-
+    color: #1070CA;
+}
+.contactMail {
+    align-self: center;
 }
