@@ -4,6 +4,8 @@ import styles from './Skills.module.scss';
 const Skills = () => {
     return(
         <>
+            <h1>Moje Umiejętności</h1>
+            <p>Programowaniem z pasji zajmuję się od ponad 10 lat, podążając za nowymi wyzwaniami, chcąc ciągle poszerzać swoją wiedzę uczestniczę w szeregu szkoleń, kursów a oto co potrafię:</p>
             <section>
                 <img />
                 <h2>Wiedza praktyczna</h2>
