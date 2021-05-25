@@ -1,9 +1,10 @@
 import React from 'react';
+import Projects from '../../components/Projects/Projects';
 
 
 function ProjectsView() {
   return (
-    <p>Moje projekty na GitHub to</p>
+    <Projects />
   );
 }
 
