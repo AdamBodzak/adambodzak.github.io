@@ -1,9 +1,10 @@
 import React from 'react';
+import Skills from '../../components/KnowSomething/Skills';
 
 
 const SkillsView = () => {
   return (
-    <p>Moje umiejętności to</p>
+    <Skills />
   );
 }
 
