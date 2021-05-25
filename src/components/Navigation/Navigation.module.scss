@@ -1,0 +1,28 @@
+.Nav {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+}
+.Nav_List {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Nav__Item {
+    list-style: none;
+}
+.Nav__Item__NavLink {
+    text-decoration: none;
+    padding: 7px 0 7px 0;
+    display: block;
+    text-align: center;
+    color: black;
+    width: 110px;
+
+    &:hover {
+        background-color: #1070CA;
+
+    }
+}
