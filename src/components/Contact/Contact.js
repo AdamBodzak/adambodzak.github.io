@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Contact.module.scss';
+import ContactMail from '../ContactMail/ContactMail';
 
 const Contact = () => {
     return(
