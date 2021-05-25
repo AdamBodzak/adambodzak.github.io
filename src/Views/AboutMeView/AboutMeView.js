@@ -1,9 +1,11 @@
 import React from 'react';
-
+import Description from '../../components/Description/description';
 
 function AboutMeView() {
   return (
-    <p>Coś o mnie</p>
+    <>
+      <Description />
+    </>
   );
 }
 
