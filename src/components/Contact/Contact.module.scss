@@ -1,0 +1,30 @@
+.section {
+    // background-color: #DBEAF7;
+    text-align: center;
+    font-weight: 700;
+}
+.headerView {
+    padding: 72px 0px 36px 0px;
+    font-size: 32px;
+}
+.paragraf {
+    padding-bottom: 72px;
+    font-size: 20px;
+}
+.contact {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+.socialMedia {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: 98px;
+}
+.image {
+    display: block;
+    border-radius: 50%;
+    border: 12px solid #DBEAF7;
+    margin: 0 12px;
+}
