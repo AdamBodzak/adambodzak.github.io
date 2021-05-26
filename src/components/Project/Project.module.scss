@@ -11,21 +11,29 @@
     background-color: #1E1E1E;
     border-radius: 16px;
     text-align: left;
+    display: flex;
+    flex-flow: row nowrap;
 }
 .circlesTopImage {
     display: block;
     padding: 16px;
 }
 .githubIcon {
-    margin: 18px 0px 24px 32px;
+    margin: 8px;
     width: 24px;
     height: 24px;
+}
+.projTitleHead {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 8px 0 8px 12px;
+    overflow: hidden;
 }
 .projInformation {
     display: grid;
     grid-template-columns: 120px 1fr;
     column-gap: 5px;
-    margin: 0 32px 58px 32px;
+    margin: 58px 32px 58px 32px;
 }
 .leftInfo {
     text-align: right;

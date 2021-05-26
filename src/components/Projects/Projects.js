@@ -2,9 +2,6 @@ import React from 'react';
 import styles from './Projects.module.scss';
 import Project from '../Project/Project';
 
-import githubImageWhite from '../../assets/img/GitHubIcon_white.svg';
-import circlesTopImage from '../../assets/img/circles_top.svg'
-
 class Projects extends React.Component {
     state = {
         projectsList: [],
