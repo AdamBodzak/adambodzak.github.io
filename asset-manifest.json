@@ -1,21 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe15b00e.chunk.css",
-    "main.js": "/static/js/main.5d440c85.chunk.js",
-    "main.js.map": "/static/js/main.5d440c85.chunk.js.map",
+    "main.css": "/static/css/main.29a65f70.chunk.css",
+    "main.js": "/static/js/main.e3cd8160.chunk.js",
+    "main.js.map": "/static/js/main.e3cd8160.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0b43b499.js",
     "runtime-main.js.map": "/static/js/runtime-main.0b43b499.js.map",
-    "static/js/2.4d8a1544.chunk.js": "/static/js/2.4d8a1544.chunk.js",
-    "static/js/2.4d8a1544.chunk.js.map": "/static/js/2.4d8a1544.chunk.js.map",
+    "static/js/2.044293c5.chunk.js": "/static/js/2.044293c5.chunk.js",
+    "static/js/2.044293c5.chunk.js.map": "/static/js/2.044293c5.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.fe15b00e.chunk.css.map": "/static/css/main.fe15b00e.chunk.css.map",
-    "static/js/2.4d8a1544.chunk.js.LICENSE.txt": "/static/js/2.4d8a1544.chunk.js.LICENSE.txt",
-    "static/media/avatar_300.1cb7e99a.gif": "/static/media/avatar_300.1cb7e99a.gif"
+    "static/css/main.29a65f70.chunk.css.map": "/static/css/main.29a65f70.chunk.css.map",
+    "static/js/2.044293c5.chunk.js.LICENSE.txt": "/static/js/2.044293c5.chunk.js.LICENSE.txt",
+    "static/media/FB.99ce637e.svg": "/static/media/FB.99ce637e.svg",
+    "static/media/GitHubIcon.9ecb57cb.svg": "/static/media/GitHubIcon.9ecb57cb.svg",
+    "static/media/GitHubIcon_white.503bd179.svg": "/static/media/GitHubIcon_white.503bd179.svg",
+    "static/media/Skills.3a5c7702.svg": "/static/media/Skills.3a5c7702.svg",
+    "static/media/Header.module.scss": "/static/media/Speech.13333786.svg",
+    "static/media/avatar_300.1cb7e99a.gif": "/static/media/avatar_300.1cb7e99a.gif",
+    "static/media/Description.module.scss": "/static/media/bracket_right.c8ed8fc6.svg",
+    "static/media/circles_top.5f8a6580.svg": "/static/media/circles_top.5f8a6580.svg",
+    "static/media/face.38131461.svg": "/static/media/face.38131461.svg",
+    "static/media/hat.f3b297cd.svg": "/static/media/hat.f3b297cd.svg",
+    "static/media/look.c1a67899.svg": "/static/media/look.c1a67899.svg",
+    "static/media/strong.3ebae95b.svg": "/static/media/strong.3ebae95b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0b43b499.js",
-    "static/js/2.4d8a1544.chunk.js",
-    "static/css/main.fe15b00e.chunk.css",
-    "static/js/main.5d440c85.chunk.js"
+    "static/js/2.044293c5.chunk.js",
+    "static/css/main.29a65f70.chunk.css",
+    "static/js/main.e3cd8160.chunk.js"
   ]
 }
