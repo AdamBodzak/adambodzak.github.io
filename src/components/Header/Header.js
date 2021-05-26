@@ -10,7 +10,9 @@ const Header = () => {
                 <img className={styles.avatar} src={avatar} alt={'Avatar'}/>
                 <div className={styles.wrapper}>
                     <div className={styles.welcome}>
-
+                        <p className={styles.speech}>
+                            Miło że jesteś na mojej stronie
+                        </p>
                     </div>
                     <Navigation />
                 </div>
