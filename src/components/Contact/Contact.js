@@ -3,6 +3,7 @@ import styles from './Contact.module.scss';
 import ContactMail from '../ContactMail/ContactMail';
 import GitHubIcon from '../../assets/img/GitHubIcon.svg';
 import fb from '../../assets/img/FB.svg';
+import mailIcon from '../../assets/img/Mail.svg';
 
 const Contact = () => {
     return(
@@ -11,6 +12,7 @@ const Contact = () => {
                 Kontakt ze mną
             </h1>
             <p className={styles.paragraf}>Jestem otwarty na nowe możliwości. Jeżeli masz jakieś dla mnie, porozmawiajmy!</p>
+            <img className={styles.mailImage} src={mailIcon} alt={'mail'}/>
             <div className={styles.contact}>
                 <div className={styles.socialMedia}>
                     <a href={'https://github.com/AdamBodzak'}>
