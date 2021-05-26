@@ -7,7 +7,7 @@ const Description = () => {
     return(
         <section className={styles.section}>
             <h1 className={styles.header}>
-                Nazywam się Adam Bodzak i aspiruję do zostania <br /> <span className={styles.special}> Frontend developer </span> ze specjalnością <span className={styles.special}> React. <br /></span> Zapraszam cię do przeczytania kilka słów na mój temat.
+                Nazywam się Adam Bodzak i aspiruję do zostania <span className={styles.special}> Frontend developer </span> ze specjalnością <span className={styles.special}> React. </span> Zapraszam cię do przeczytania kilka słów na mój temat.
             </h1>
             <div className={styles.description}>
                 <p className={styles.aboutMe}>
