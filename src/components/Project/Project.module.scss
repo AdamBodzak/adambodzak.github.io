@@ -1,0 +1,64 @@
+.oneProject {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    color: #808082;
+    background-color: #212528;
+    border-radius: 16px;
+    margin: 12px;
+}
+.topBar {
+    background-color: #1E1E1E;
+    border-radius: 16px;
+    text-align: left;
+}
+.circlesTopImage {
+    display: block;
+    padding: 16px;
+}
+.githubIcon {
+    margin: 18px 0px 24px 32px;
+    width: 24px;
+    height: 24px;
+}
+.projInformation {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    column-gap: 5px;
+    margin: 0 32px 58px 32px;
+}
+.leftInfo {
+    text-align: right;
+}
+.projTitle {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.projTitle__bold {
+    font-weight: 700;
+    color: white;
+}
+.projDescription {
+    margin-bottom: 24px;
+}
+.justify {
+    text-align: justify;
+}
+.projDemo {
+    margin-bottom: 8px;
+}
+.blue {
+    color: #14B5D0;
+    text-decoration: none;
+
+    &::before {
+        content: '<';
+        color: #808082;
+    }
+    &::after {
+        content: '>';
+        color: #808082;
+    }
+}
