@@ -1,0 +1,108 @@
+.section {
+    font-weight: 700;
+    margin: 16px 16px 72px 16px;
+}
+.headerView {
+    text-align: center;
+    padding: 72px 0px 36px 0px;
+    font-size: 32px;
+}
+.paragraf {
+    text-align: justify;
+    padding-bottom: 72px;
+    font-size: 20px;
+}
+.allProjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 128px 0 128px;
+    column-gap: 24px;
+    row-gap: 24px;
+}
+.oneProject {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    color: #808082;
+    background-color: #212528;
+    border-radius: 16px;
+}
+.topBar {
+    background-color: #1E1E1E;
+    border-radius: 16px;
+    text-align: left;
+}
+.circlesTopImage {
+    display: block;
+    padding: 16px;
+}
+.githubIcon {
+    margin: 18px 0px 24px 32px;
+    width: 24px;
+    height: 24px;
+}
+.projInformation {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    column-gap: 5px;
+    margin: 0 32px 58px 32px;
+}
+.leftInfo {
+    text-align: right;
+}
+.projTitle {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.projTitle__bold {
+    font-weight: 700;
+    color: white;
+}
+.projDescription {
+    margin-bottom: 24px;
+}
+.projDemo {
+    margin-bottom: 8px;
+}
+.blue {
+    color: #14B5D0;
+
+    &::before {
+        content: '<';
+        color: #808082;
+    }
+    &::after {
+        content: '>';
+        color: #808082;
+    }
+}
+
+// .projTitle {
+//     font-family: 'Roboto Mono', monospace;
+//     font-weight: 400;
+//     font-size: 16px;
+//     padding: 0 32px 8px 32px;
+// }
+// .projDescription {
+//     display: flex;
+//     flex-flow: row nowrap;
+//     padding: 0 32px 24px 32px;
+// }
+// .projDemo {
+//     display: flex;
+//     flex-flow: row nowrap;
+//     padding: 0 32px 8px 32px;
+// }
+// .projGithub{
+//     display: flex;
+//     flex-flow: row nowrap;
+//     padding: 0 32px 58px 32px;
+// }
+// .leftInfo {
+//     text-align: right;
+// }
+// .rightInfo {
+
+//     text-align: left;
+// }
