@@ -1,4 +1,4 @@
-.description {
+.section {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -6,17 +6,55 @@
     text-align: center;
     font-weight: 700;
 }
-.header1 {
-    padding: 72px 0 0 0;
+.header {
+    padding: 72px 48px 72px 48px;
     font-size: 32px;
+    position: relative;
+    box-sizing: content-box;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        width: 48px;
+        height: 150px;
+        display: block;
+        top: 65px;
+    }
+
+    &::before {
+        left: 0px;
+        background: url('../../assets/img/bracket_left.svg') no-repeat;
+    }
+    &::after {
+        right: 0px;
+        background: url('../../assets/img/bracket_right.svg') no-repeat;
+    }
 }
-.paragraph {
-    padding: 24px 0 72px 0;
+.article {
+    padding: 72px 0 72px 0;
     font-size: 20px;
+}
+.description {
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+.aboutMe {
+    font-size: 20px;
+    text-align: justify;
+}
+.lookImage {
+    margin: 10px;
+    float: right;
+    display: block;
+    width: 249.08px;
+    height: 200px;
 }
 .special {
     color: #1070CA;
 }
 .contactMail {
     align-self: center;
+    padding-bottom: 72px;
 }
