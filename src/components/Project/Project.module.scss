@@ -5,17 +5,14 @@
     color: #808082;
     background-color: #212528;
     border-radius: 16px;
-    margin: 12px;
 }
 .topBar {
     background-color: #1E1E1E;
     border-radius: 16px;
-    text-align: left;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
 }
 .circlesTopImage {
-    display: block;
     padding: 16px;
 }
 .githubIcon {
@@ -24,10 +21,12 @@
     height: 24px;
 }
 .projTitleHead {
+    max-width: 150px;
     font-weight: 400;
     font-size: 16px;
-    margin: 8px 0 8px 12px;
+    margin: 9px 0 8px 12px;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .projInformation {
     display: grid;
@@ -39,23 +38,31 @@
     text-align: right;
 }
 .projTitle {
+    display: block;
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 8px;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .projTitle__bold {
     font-weight: 700;
     color: white;
 }
 .projDescription {
+    display: block;
     margin-bottom: 24px;
+    word-break: break-all;
 }
 .justify {
     text-align: justify;
 }
 .projDemo {
+    display: block;
     margin-bottom: 8px;
+}
+.projGithub {
+    display: block;
 }
 .blue {
     color: #14B5D0;
