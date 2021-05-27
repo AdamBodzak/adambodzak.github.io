@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Projects.module.scss';
 import Project from '../Project/Project';
+import projectImage from '../../assets/img/projects.svg';
 
 class Projects extends React.Component {
     state = {
@@ -37,6 +38,7 @@ class Projects extends React.Component {
             <section className={styles.section}>
                 <h1 className={styles.headerView}>Moje ostatnie projekty</h1>
                 <p className={styles.paragraf}>Swoją ścieżkę programisty rozpocząłem około roku 2000. Od tego czasu stworzyć kilka projektów. Od marca 2020r. posiadam konto na GitHub-ie i oto kilku projektów które chciałem zaprezentować.</p>
+                <img className={styles.projectImage} src={projectImage} alt={'project'}/>
                 <div className={styles.allProjects}>
                     {this.state.projectsList.map((e) => (
                         <Project

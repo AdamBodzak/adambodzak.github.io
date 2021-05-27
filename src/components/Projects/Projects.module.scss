@@ -1,6 +1,8 @@
 .section {
     font-weight: 700;
     margin: 16px 16px 72px 16px;
+    display: flex;
+    flex-flow: column nowrap;
 }
 .headerView {
     text-align: center;
@@ -16,12 +18,18 @@
     background-color: #1070CA;
     box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.6);
 }
+.projectImage {
+    margin: 72px 0 72px 0;
+    width: 268.64;
+    height: 200px;
+    align-self: center;
+}
 .allProjects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 24px;
     row-gap: 24px;
-    margin: 72px 36px 0 36px;
+    margin: 0 36px 0 36px;
 
     // @media screen and (max-width: 1000px) {
     //     grid-template-columns: 1fr;

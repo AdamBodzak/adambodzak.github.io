@@ -15,7 +15,7 @@ const Contact = () => {
             <img className={styles.mailImage} src={mailIcon} alt={'mail'}/>
             <div className={styles.contact}>
                 <div className={styles.socialMedia}>
-                    <a href={'https://github.com/AdamBodzak'}>
+                    <a target={'_blank'} rel={"noreferrer"} href={'https://github.com/AdamBodzak'}>
                         <img
                             className={styles.image}
                             src={GitHubIcon}

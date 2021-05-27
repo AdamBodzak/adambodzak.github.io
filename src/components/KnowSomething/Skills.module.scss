@@ -4,7 +4,7 @@
 }
 .wrapper {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
 }
 .headerView {
     text-align: center;
@@ -12,17 +12,22 @@
     font-size: 32px;
 }
 .paragraf {
-    padding-bottom: 18px;
+    padding: 12px 0;
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    background-color: #1070CA;
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.6);
 }
 .skillsImage {
-    margin: 50px 0 0 31px;
-    height: 180px;
-    width: 228.32px;
+    margin: 72px 0 0 31px;
+    height: 250px;
+    width: 317.11px;
+    align-self: center;
 }
 .courseList {
-    padding: 20px;
+    padding: 72px 20px 72px 20px;
     font-size: 20px;
     text-align: justify;
 }
@@ -32,7 +37,9 @@
 .skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
     text-align: center;
+    padding: 31px 128px 0 128px;
 }
 .article {
 
@@ -46,12 +53,25 @@
     padding-bottom: 24px;
 }
 .list {
-    list-style-position: inside;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
     text-align: left;
-    padding: 0 0 0 80px;
+    padding: 0 36px 0 76px;
 }
 .listItem {
 
+}
+.secondUL {
+    font-weight: 600;
+    margin: 0 0 5px 16px;
+}
+.secondItem {
+    list-style-type: none;
+    position: relative;
+    &::before {
+        content: '-';
+        position: absolute;
+        display: block;
+        left: -15px;
+    }
 }
