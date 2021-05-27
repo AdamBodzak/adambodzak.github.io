@@ -17,6 +17,7 @@ const Skills = () => {
                 <img
                     src={skillsImage}
                     className={styles.skillsImage}
+                    alt={'skills'}
                 />
             </div>
             <ul className={styles.courseList}>
@@ -52,7 +53,7 @@ const Skills = () => {
 
             <div className={styles.skills}>
                 <article className={styles.article}>
-                    <img className={styles.image} src={strongImage} />
+                    <img className={styles.image} src={strongImage} alt={'strong'} />
                     <h2 className={styles.header}>Posiadam wiedza praktyczną</h2>
                     <ul className={styles.list}>
                         <li className={styles.listItem}>
@@ -136,7 +137,7 @@ const Skills = () => {
                     </ul>
                 </article>
                 <article className={styles.article}>
-                    <img className={styles.image} src={faceImage} />
+                    <img className={styles.image} src={faceImage} alt={'face'} />
                     <h2 className={styles.header}>Wiem coś na temat</h2>
                     <ul className={styles.list}>
                         <li className={styles.listItem}>
@@ -154,7 +155,7 @@ const Skills = () => {
                     </ul>
                 </article>
                 <article className={styles.article}>
-                    <img className={styles.image} src={hatImage} />
+                    <img className={styles.image} src={hatImage} alt={'hat'} />
                     <h2 className={styles.header}>Chcę cię nauczyć</h2>
                     <ul className={styles.list}>
                         <li className={styles.listItem}>
