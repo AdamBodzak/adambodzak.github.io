@@ -6,29 +6,33 @@ class Projects extends React.Component {
     state = {
         projectsList: [],
         pinsRepo: [
+            'adambodzak.github.io',
             'AdamRomanowski_kursReactOdPodstaw',
             'CourseReact_QuickStart_MichalTaszycki',
+            'secondPageDROGOWIEC',
             'Kurs_ReaktFundamenty_MichalTaszycki',
             'Szkolenie_GraphQL',
-            'secondPageDROGOWIEC',
-            'adambodzak.github.io',]
+        ]
     }
 
     componentDidMount() {
         fetch("https://api.github.com/users/AdamBodzak/repos")
         .then((res) => res.json())
         .then((res) => {
-            const array = res.filter((e) => (this.state.pinsRepo.includes(e.name)) )
-            console.log(array)
+            const resultMatching = res.filter((e) => (this.state.pinsRepo.includes(e.name)) )
+            let resultInOrder = [];
+            for (let i = 0; i < this.state.pinsRepo.length; i++) {
+                const oneObject = resultMatching.filter(e => e.name === this.state.pinsRepo[i])
+                resultInOrder.push(...oneObject)
+            }
             this.setState({
-                projectsList: array
+                projectsList: resultInOrder
             })
         })
         .catch((error) => console.log(error));
     }
 
     render() {
-        // console.log(this.state.projectsList)
         return(
             <section className={styles.section}>
                 <h1 className={styles.headerView}>Moje ostatnie projekty</h1>
