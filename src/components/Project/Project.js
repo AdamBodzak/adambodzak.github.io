@@ -14,8 +14,8 @@ const Project = ({ name, description, homepage, svn_url }) => {
             <div className={styles.projInformation}>
                 <h2 className={`${styles.projTitle} ${styles.leftInfo}`}>project:</h2><h2 className={`${styles.projTitle} ${styles.projTitle__bold}`}>{name}</h2>
                 <span className={`${styles.projDescription} ${styles.leftInfo}`}>description:</span><span className={`${styles.projDescription} ${styles.justify}`}>{description}</span>
-                <span className={`${styles.projDemo} ${styles.leftInfo}`}>demo:</span><a href={homepage} className={`${styles.projDemo} ${styles.blue}`}>see here</a>
-                <span className={`${styles.projGithub} ${styles.leftInfo}`}>github:</span><a href={svn_url} className={`${styles.projGithub} ${styles.blue}`}>source code</a>
+                <span className={`${styles.projDemo} ${styles.leftInfo}`}>demo:</span><a target={'_blank'} rel={"noreferrer"} href={homepage} className={`${styles.projDemo} ${styles.blue}`}>see here</a>
+                <span className={`${styles.projGithub} ${styles.leftInfo}`}>github:</span><a target={'_blank'} rel={"noreferrer"} href={svn_url} className={`${styles.projGithub} ${styles.blue}`}>source code</a>
             </div>
         </article>
     )
