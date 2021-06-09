@@ -16,13 +16,13 @@
         top: 0px;
         height: 100vh;
         padding: 50px;
-        transform: translateX(100vw);
+        transform: translateX(-100%);
         transition: transform 0.3s ease-in-out;
     }
 }
 .classShowMobileMenu {
     transform: translateX(0px);
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .Nav_List {
     display: flex;
