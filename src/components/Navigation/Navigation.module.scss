@@ -6,12 +6,34 @@
     font-weight: 700;
     font-weight: bold;
     font-size: 20px;
+
+    @media screen and (max-width: 700px) {
+        position: absolute;
+        font-size: 36px;
+        line-height: 48px;
+        z-index: 90;
+        left: 0px;
+        top: 0px;
+        height: 100vh;
+        padding: 50px;
+        transform: translateX(100vw);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+.classShowMobileMenu {
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
 }
 .Nav_List {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    @media screen and (max-width: 700px) {
+        flex-flow: column nowrap;
+        background-color: transparent;
+    }
 }
 .Nav__Item {
     list-style: none;

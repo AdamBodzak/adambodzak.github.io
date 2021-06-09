@@ -2,26 +2,26 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Navigation.module.scss';
 
-function App() {
+function App({showMobileMenu, fnShowMenu}) {
   return (
-    <nav className={styles.Nav}>
+    <nav className={`${styles.Nav} + ${styles[showMobileMenu ? 'classShowMobileMenu' : null]}`}>
         <ul className={styles.Nav_List}>
-            <li className={styles.Nav__Item}>
+            <li onClick={fnShowMenu} className={styles.Nav__Item}>
                 <NavLink className={styles.Nav__Item__NavLink} to='/'>
                     O mnie
                 </NavLink>
             </li>
-            <li className={styles.Nav__Item}>
+            <li onClick={fnShowMenu} className={styles.Nav__Item}>
                 <NavLink className={styles.Nav__Item__NavLink} to='/skills'>
                     Umiejętności
                 </NavLink>
             </li>
-            <li className={styles.Nav__Item}>
+            <li onClick={fnShowMenu} className={styles.Nav__Item}>
                 <NavLink className={styles.Nav__Item__NavLink} to='/projects'>
                     Projekty
                 </NavLink>
             </li>
-            <li className={styles.Nav__Item}>
+            <li onClick={fnShowMenu} className={styles.Nav__Item}>
                 <NavLink className={styles.Nav__Item__NavLink} to='/contact'>
                     Kontakt
                 </NavLink>

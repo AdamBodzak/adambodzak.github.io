@@ -3,11 +3,24 @@
     flex-flow: row nowrap;
     height: 200px;
     margin: 16px 16px 0 16px;
+
+    @media screen and (max-width: 600px) {
+        display: flex;
+        flex-flow: row nowrap;
+    }
 }
 .avatar {
     display: block;
+    width: 200px;
+    height: 200px;
     background-color: #DBEAF7;
     border-radius: 0 50% 50% 50%;
+
+    @media screen and (max-width: 600px) {
+        border-radius: 50%;
+        margin: 5px;
+        align-self: center;
+    }
 }
 .wrapper {
     padding: 10px 0 0 20px;
@@ -16,6 +29,15 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+}
+.welcome {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: 700px) {
+        flex-flow: row-reverse nowrap;
+    }
 }
 .speech {
     left: -70px;
@@ -38,4 +60,78 @@
         height: 23px;
         background: url('../../assets/img/Speech.svg');
     }
+
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
 }
+.hamburgerMenu__Button {
+    display: none;
+    background-color: inherit;
+    border: inherit;
+
+    @media screen and (max-width: 700px) {
+        display: block;
+    }
+}
+.hamburgerMenu__BG {
+    // display: inline-block;
+    // background-color: red;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+}
+@mixin hamburgerMenu__Line {
+    display: inline-block;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 3px;
+    left: 0px;
+}
+.hamburgerMenu__Icon {
+    @include hamburgerMenu__Line();
+
+    top: 50%;
+    transform: translateY(-50%);
+    // top: 16px;
+    transition: background-color 0.1s 0.2s ease-in-out;
+
+    &::before,
+    &::after {
+        @include hamburgerMenu__Line();
+
+        content: '';
+        transition: transform 0.2s 0.2s ease-in-out;
+    }
+    &::before {
+        top: -16px;
+    }
+    &::after {
+        bottom: -16px;
+    }
+}
+
+.classShowMobileMenu {
+    background-color: inherit;
+    z-index: 100;
+
+    &::before {
+        transform: translateY(16px) rotate(45deg);
+    }
+    &::after {
+        transform: translateY(-16px) rotate(-45deg);
+    }
+}
+
+// .hamburgerMenu__BG .hamburgerMenu__Icon {
+//     background-color: inherit;
+
+//     &::before {
+//         transform: translateY(16px) rotate(45deg);
+//     }
+//     &::after {
+//         transform: translateY(-16px) rotate(-45deg);
+//     }
+// }
