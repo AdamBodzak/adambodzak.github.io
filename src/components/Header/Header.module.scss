@@ -75,8 +75,6 @@
     }
 }
 .hamburgerMenu__BG {
-    // display: inline-block;
-    // background-color: red;
     width: 35px;
     height: 35px;
     cursor: pointer;
@@ -95,7 +93,6 @@
 
     top: 50%;
     transform: translateY(-50%);
-    // top: 16px;
     transition: background-color 0.1s 0.2s ease-in-out;
 
     &::before,
@@ -124,14 +121,3 @@
         transform: translateY(-16px) rotate(-45deg);
     }
 }
-
-// .hamburgerMenu__BG .hamburgerMenu__Icon {
-//     background-color: inherit;
-
-//     &::before {
-//         transform: translateY(16px) rotate(45deg);
-//     }
-//     &::after {
-//         transform: translateY(-16px) rotate(-45deg);
-//     }
-// }

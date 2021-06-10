@@ -9,7 +9,7 @@
     font-size: 32px;
 }
 .paragraf {
-    padding: 12px 0;
+    padding: 12px;
     font-size: 20px;
     color: white;
     line-height: 40px;
@@ -21,11 +21,20 @@
     flex-flow: row nowrap;
     padding-bottom: 50px;
     justify-content: center;
+
+    @media screen and (max-width: 500px) {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
 }
 .socialMedia {
     display: flex;
     flex-flow: row nowrap;
     margin-right: 98px;
+
+    @media screen and (max-width: 500px) {
+        margin: 0 auto 1em auto;
+    }
 }
 .image {
     display: block;
@@ -37,4 +46,9 @@
     width: 275px;
     height: 200px;
     margin: 72px 0 31px 0;
+
+    @media screen and (max-width: 780px) {
+        margin-top: 2em ;
+        width: 80vw;
+    }
 }

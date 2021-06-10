@@ -5,41 +5,55 @@
     align-content: center;
     text-align: center;
     font-weight: 700;
-    margin: 16px 16px 72px 16px;
+    margin: 72px 16px 72px 16px;
 }
 .header {
-    padding: 72px 48px 72px 48px;
+    padding: 0 48px;
     font-size: 32px;
     position: relative;
     box-sizing: content-box;
 
-    &::after,
-    &::before {
-        content: '';
-        position: absolute;
-        width: 48px;
-        height: 150px;
-        display: block;
-        top: 65px;
+    @media screen and (min-width: 960px) {
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 48px;
+            height: 150px;
+            display: block;
+            top: -5px;
+        }
+
+        &::before {
+            left: 0px;
+            background: url('../../assets/img/bracket_left.svg') no-repeat;
+        }
+        &::after {
+            right: 0px;
+            background: url('../../assets/img/bracket_right.svg') no-repeat;
+        }
     }
 
-    &::before {
-        left: 0px;
-        background: url('../../assets/img/bracket_left.svg') no-repeat;
-    }
-    &::after {
-        right: 0px;
-        background: url('../../assets/img/bracket_right.svg') no-repeat;
+    @media screen and (max-width: 960px) {
+        padding: 12px;
+        color: white;
+        line-height: 40px;
+        background-color: #1070CA;
+        box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.6);
     }
 }
 .article {
     padding: 72px 0 72px 0;
     font-size: 20px;
+
+    @media screen and (max-width: 1000px) {
+        text-align: justify;
+    }
 }
 .description {
     display: flex;
     flex-flow: row nowrap;
-
+    padding-top: 72px;
 }
 .aboutMe {
     font-size: 20px;
@@ -51,9 +65,19 @@
     display: block;
     width: 249.08px;
     height: 200px;
+
+    @media screen and (max-width: 700px) {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .special {
     color: #1070CA;
+
+    @media screen and (max-width: 960px) {
+        color: #000;
+    }
 }
 .contactMail {
     align-self: center;
