@@ -22,5 +22,5 @@ Umiejętności i technologie które pozwoliły mi zbudować tą stronę to:
 ***
 Do strony dodał bym:
 1. stopkę która będzie zawierała informacje kontaktowe i datę ostatniej aktualizacji pobieraną z daty branch na GitHub.
-1. wersję dark mode.
-2. wersję w języku angielskim.
+2. wersję dark mode.
+3. wersję w języku angielskim.
