@@ -43,7 +43,13 @@
     }
 }
 .courseItem {
-    padding-bottom: 12px;
+    padding-bottom: 21px;
+    list-style: none;
+
+    &:hover {
+        background-color: #DBEAF7;
+        cursor: default;
+    }
 }
 .skills {
     display: grid;
