@@ -52,6 +52,14 @@
         cursor: default;
     }
 }
+
+.courseItem__paragraf {
+    padding-left: 32px;
+
+    @media screen and (max-width:780px) {
+        padding-left: 8px;
+    }
+}
 .skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
