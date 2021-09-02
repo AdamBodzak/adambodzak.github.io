@@ -17,15 +17,6 @@ function App({ showMobileMenu, fnShowMenu }) {
             className={styles.Nav__Item__NavLink}
             to="/"
           >
-            O mnie
-          </NavLink>
-        </li>
-        <li onClick={fnShowMenu} className={styles.Nav__Item}>
-          <NavLink
-            activeClassName={styles.active}
-            className={styles.Nav__Item__NavLink}
-            to="/skills"
-          >
             Umiejętności
           </NavLink>
         </li>
@@ -45,6 +36,15 @@ function App({ showMobileMenu, fnShowMenu }) {
             to="/contact"
           >
             Kontakt
+          </NavLink>
+        </li>
+        <li onClick={fnShowMenu} className={styles.Nav__Item}>
+          <NavLink
+            activeClassName={styles.active}
+            className={styles.Nav__Item__NavLink}
+            to="/about_me"
+          >
+            O mnie
           </NavLink>
         </li>
       </ul>
