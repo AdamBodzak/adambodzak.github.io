@@ -1,116 +1,113 @@
 .section {
-    font-weight: 700;
-    margin: 16px 16px 72px 16px;
+  font-weight: 700;
+  margin: 16px 16px 72px 16px;
 }
 .wrapper {
-    display: flex;
-    flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 }
 .headerView {
-    text-align: center;
-    padding: 72px 0px 36px 0px;
-    font-size: 32px;
+  text-align: center;
+  padding: 72px 0px 36px 0px;
+  font-size: 32px;
 }
 .paragraf {
-    padding: 12px;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    line-height: 40px;
-    background-color: #1070CA;
-    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.6);
+  padding: 12px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  line-height: 40px;
+  background-color: #1070ca;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.6);
 }
 .skillsImage {
-    margin: 72px 0 0 0;
-    height: 250px;
-    width: 654.26px;
-    align-self: center;
+  margin: 31px 0 16px 0;
+  height: 250px;
+  width: 654.26px;
+  align-self: center;
 
-    @media screen and (max-width: 780px) {
-        margin-top: 0.5em ;
-        width: 80vw;
-    }
+  @media screen and (max-width: 780px) {
+    margin-top: 0.5em;
+    width: 80vw;
+  }
 }
 .courseList {
-    padding: 72px 20px 72px 20px;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: justify;
+  padding: 36px 20px 72px 20px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: justify;
 
-    @media screen and (max-width: 780px) {
-        padding-top: 0.5em;
-        padding-right: 0;
-        font-size: 15px;
-    }
+  @media screen and (max-width: 780px) {
+    padding-top: 0.5em;
+    padding-right: 0;
+    font-size: 15px;
+  }
 }
 .courseItem {
-    padding-bottom: 21px;
-    list-style: none;
+  padding-bottom: 21px;
+  list-style: none;
 
-    &:hover {
-        background-color: #DBEAF7;
-        cursor: default;
-    }
+  &:hover {
+    background-color: #dbeaf7;
+    cursor: default;
+  }
 }
 
 .courseItem__paragraf {
-    padding-left: 32px;
+  padding-left: 32px;
 
-    @media screen and (max-width:780px) {
-        padding-left: 8px;
-    }
+  @media screen and (max-width: 780px) {
+    padding-left: 8px;
+  }
 }
 .skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 12px;
-    row-gap: 31px;
-    text-align: center;
-    padding: 31px 31px 0 31px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 12px;
+  row-gap: 31px;
+  text-align: center;
+  padding: 31px 31px 72px 31px;
 
-    @media screen and (max-width: 960px) {
-        grid-template-columns: 1fr 1fr;
-    }
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    @media screen and (max-width: 800px) {
-        grid-template-columns: 1fr;
-    }
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 
-    @media screen and (max-width: 400px) {
-        padding: 3em 0.5em 0 0.5em;
-    }
+  @media screen and (max-width: 400px) {
+    padding: 3em 0.5em 0 0.5em;
+  }
 }
 .article {
-
 }
 .image {
-
 }
 .header {
-    font-weight: bold;
-    font-size: 24px;
-    padding-bottom: 24px;
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 24px;
 }
 .list {
-    font-weight: 700;
-    font-size: 16px;
-    text-align: left;
-    padding: 0 36px 0 76px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: left;
+  padding: 0 36px 0 76px;
 }
 .listItem {
-
 }
 .secondUL {
-    font-weight: 600;
-    margin: 0 0 5px 16px;
+  font-weight: 600;
+  margin: 0 0 5px 16px;
 }
 .secondItem {
-    list-style-type: none;
-    position: relative;
-    &::before {
-        content: '-';
-        position: absolute;
-        display: block;
-        left: -15px;
-    }
+  list-style-type: none;
+  position: relative;
+  &::before {
+    content: "-";
+    position: absolute;
+    display: block;
+    left: -15px;
+  }
 }
