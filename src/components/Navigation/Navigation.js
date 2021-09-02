@@ -1,32 +1,53 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import styles from './Navigation.module.scss';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import styles from "./Navigation.module.scss";
 
-function App({showMobileMenu, fnShowMenu}) {
+function App({ showMobileMenu, fnShowMenu }) {
   return (
-    <nav className={`${styles.Nav} + ${styles[showMobileMenu ? 'classShowMobileMenu' : null]}`}>
-        <ul className={styles.Nav_List}>
-            <li onClick={fnShowMenu} className={styles.Nav__Item}>
-                <NavLink className={styles.Nav__Item__NavLink} to='/'>
-                    O mnie
-                </NavLink>
-            </li>
-            <li onClick={fnShowMenu} className={styles.Nav__Item}>
-                <NavLink className={styles.Nav__Item__NavLink} to='/skills'>
-                    Umiejętności
-                </NavLink>
-            </li>
-            <li onClick={fnShowMenu} className={styles.Nav__Item}>
-                <NavLink className={styles.Nav__Item__NavLink} to='/projects'>
-                    Projekty
-                </NavLink>
-            </li>
-            <li onClick={fnShowMenu} className={styles.Nav__Item}>
-                <NavLink className={styles.Nav__Item__NavLink} to='/contact'>
-                    Kontakt
-                </NavLink>
-            </li>
-        </ul>
+    <nav
+      className={`${styles.Nav} + ${
+        styles[showMobileMenu ? "classShowMobileMenu" : null]
+      }`}
+    >
+      <ul className={styles.Nav_List}>
+        <li onClick={fnShowMenu} className={styles.Nav__Item}>
+          <NavLink
+            exact
+            activeClassName={styles.active}
+            className={styles.Nav__Item__NavLink}
+            to="/"
+          >
+            O mnie
+          </NavLink>
+        </li>
+        <li onClick={fnShowMenu} className={styles.Nav__Item}>
+          <NavLink
+            activeClassName={styles.active}
+            className={styles.Nav__Item__NavLink}
+            to="/skills"
+          >
+            Umiejętności
+          </NavLink>
+        </li>
+        <li onClick={fnShowMenu} className={styles.Nav__Item}>
+          <NavLink
+            activeClassName={styles.active}
+            className={styles.Nav__Item__NavLink}
+            to="/projects"
+          >
+            Projekty
+          </NavLink>
+        </li>
+        <li onClick={fnShowMenu} className={styles.Nav__Item}>
+          <NavLink
+            activeClassName={styles.active}
+            className={styles.Nav__Item__NavLink}
+            to="/contact"
+          >
+            Kontakt
+          </NavLink>
+        </li>
+      </ul>
     </nav>
   );
 }
