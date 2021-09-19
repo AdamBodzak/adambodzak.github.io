@@ -27,7 +27,7 @@
   align-self: center;
 
   @media screen and (max-width: 780px) {
-    margin-top: 0.5em;
+    margin: 48px 0 17px 0;
     width: 80vw;
   }
 }
@@ -38,7 +38,7 @@
   text-align: justify;
 
   @media screen and (max-width: 780px) {
-    padding-top: 0.5em;
+    padding-top: 2em;
     padding-right: 0;
     font-size: 15px;
   }
