@@ -27,7 +27,7 @@
   align-self: center;
 
   @media screen and (max-width: 780px) {
-    margin: 48px 0 17px 0;
+    margin: 48px 0 0 0;
     width: 80vw;
     height: 15vh;
   }
@@ -78,7 +78,7 @@
   }
 
   @media screen and (max-width: 400px) {
-    padding: 3em 0.5em 0 0.5em;
+    padding: 3em 0.5em 3em 0.5em;
   }
 }
 
