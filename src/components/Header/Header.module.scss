@@ -1,123 +1,68 @@
 .header {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 200px;
+  margin: 16px 16px 0 16px;
+
+  @media screen and (max-width: 600px) {
     display: flex;
     flex-flow: row nowrap;
-    height: 200px;
-    margin: 16px 16px 0 16px;
-
-    @media screen and (max-width: 600px) {
-        display: flex;
-        flex-flow: row nowrap;
-    }
+  }
 }
 .avatar {
-    display: block;
-    width: 200px;
-    height: 200px;
-    background-color: #DBEAF7;
-    border-radius: 0 50% 50% 50%;
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: #dbeaf7;
+  border-radius: 0 50% 50% 50%;
 
-    @media screen and (max-width: 600px) {
-        border-radius: 50%;
-        margin: 5px;
-        align-self: center;
-    }
+  @media screen and (max-width: 600px) {
+    border-radius: 50%;
+    margin: 5px;
+    align-self: center;
+  }
 }
 .wrapper {
-    padding: 10px 0 0 20px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
+  padding: 10px 0 0 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  position: relative;
 }
 .welcome {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 
-    @media screen and (max-width: 700px) {
-        flex-flow: row-reverse nowrap;
-    }
+  @media screen and (max-width: 700px) {
+    flex-flow: row-reverse nowrap;
+  }
 }
 .speech {
-    left: -70px;
-    display: inline-block;
-    background-color: #1070CA;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 12px 15px;
-    border-radius: 16px;
-    position: relative;
-    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.6);
+  left: -70px;
+  display: inline-block;
+  background-color: #1070ca;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 12px 15px;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.6);
 
-    &::after {
-        position: absolute;
-        bottom: -23px;
-        content: '';
-        display: block;
-        width: 17px;
-        height: 23px;
-        background: url('../../assets/img/Speech.svg');
-    }
-
-    @media screen and (max-width: 700px) {
-        display: none;
-    }
-}
-.hamburgerMenu__Button {
-    display: none;
-    background-color: inherit;
-    border: inherit;
-
-    @media screen and (max-width: 700px) {
-        display: block;
-    }
-}
-.hamburgerMenu__BG {
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    position: relative;
-}
-@mixin hamburgerMenu__Line {
-    display: inline-block;
+  &::after {
     position: absolute;
-    background-color: black;
-    width: 100%;
-    height: 3px;
-    left: 0px;
-}
-.hamburgerMenu__Icon {
-    @include hamburgerMenu__Line();
+    bottom: -23px;
+    content: "";
+    display: block;
+    width: 17px;
+    height: 23px;
+    background: url("../../assets/img/Speech.svg");
+  }
 
-    top: 50%;
-    transform: translateY(-50%);
-    transition: background-color 0.1s 0.2s ease-in-out;
-
-    &::before,
-    &::after {
-        @include hamburgerMenu__Line();
-
-        content: '';
-        transition: transform 0.2s 0.2s ease-in-out;
-    }
-    &::before {
-        top: -16px;
-    }
-    &::after {
-        bottom: -16px;
-    }
-}
-
-.classShowMobileMenu {
-    background-color: inherit;
-    z-index: 100;
-
-    &::before {
-        transform: translateY(16px) rotate(45deg);
-    }
-    &::after {
-        transform: translateY(-16px) rotate(-45deg);
-    }
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 }
