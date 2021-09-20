@@ -16,10 +16,16 @@
     left: 0px;
     top: 0px;
     height: 100vh;
-    padding: 80px 0 0 0;
+    // padding: 80px 0 0 0;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
   }
+}
+
+.logoWrapper {
+  background-color: white;
+  width: 100%;
+  padding: 80px 0 20px 0;
 }
 
 .logoImage {
@@ -38,7 +44,8 @@
 
 .hamburgerMenu__Button {
   display: none;
-  background-color: inherit;
+  background-color: #1070ca;
+  border-radius: 10px;
   border: inherit;
 
   @media screen and (max-width: 700px) {
@@ -50,8 +57,8 @@
   }
 }
 .hamburgerMenu__BG {
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   position: relative;
 }
@@ -59,9 +66,9 @@
   display: inline-block;
   position: absolute;
   background-color: black;
-  width: 100%;
+  width: 80%;
   height: 3px;
-  left: 0px;
+  left: 4px;
 }
 .hamburgerMenu__Icon {
   @include hamburgerMenu__Line();
@@ -78,10 +85,10 @@
     transition: transform 0.2s 0.2s ease-in-out;
   }
   &::before {
-    top: -16px;
+    top: -14px;
   }
   &::after {
-    bottom: -16px;
+    bottom: -14px;
   }
 }
 
@@ -92,17 +99,13 @@
   transition: all 0.5s ease-in-out;
 
   &::before {
-    transform: translateY(16px) rotate(45deg);
+    transform: translateY(14px) rotate(45deg);
   }
   &::after {
-    transform: translateY(-16px) rotate(-45deg);
+    transform: translateY(-14px) rotate(-45deg);
   }
 }
 
-// .classShowMobileMenu {
-//   transform: translateX(0px);
-//   transition: all 0.5s ease-in-out;
-// }
 .Nav_List {
   display: flex;
   flex-direction: row;
@@ -111,7 +114,7 @@
 
   @media screen and (max-width: 700px) {
     flex-flow: column nowrap;
-    background-color: transparent;
+    background-color: white;
   }
 }
 .Nav__Item {

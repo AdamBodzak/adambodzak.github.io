@@ -20,47 +20,49 @@ function App({ showMobileMenu, fnShowMenu }) {
           styles[showMobileMenu ? "classShowMobileMenu" : null]
         }`}
       >
-        <img className={styles.logoImage} src={logoAllImage} alt="logo" />
+        <div className={styles.logoWrapper}>
+          <img className={styles.logoImage} src={logoAllImage} alt="logo" />
 
-        <ul className={styles.Nav_List}>
-          <li onClick={fnShowMenu} className={styles.Nav__Item}>
-            <NavLink
-              exact
-              activeClassName={styles.active}
-              className={styles.Nav__Item__NavLink}
-              to="/"
-            >
-              Umiejętności
-            </NavLink>
-          </li>
-          <li onClick={fnShowMenu} className={styles.Nav__Item}>
-            <NavLink
-              activeClassName={styles.active}
-              className={styles.Nav__Item__NavLink}
-              to="/projects"
-            >
-              Projekty
-            </NavLink>
-          </li>
-          <li onClick={fnShowMenu} className={styles.Nav__Item}>
-            <NavLink
-              activeClassName={styles.active}
-              className={styles.Nav__Item__NavLink}
-              to="/contact"
-            >
-              Kontakt
-            </NavLink>
-          </li>
-          <li onClick={fnShowMenu} className={styles.Nav__Item}>
-            <NavLink
-              activeClassName={styles.active}
-              className={styles.Nav__Item__NavLink}
-              to="/about_me"
-            >
-              O mnie
-            </NavLink>
-          </li>
-        </ul>
+          <ul className={styles.Nav_List}>
+            <li onClick={fnShowMenu} className={styles.Nav__Item}>
+              <NavLink
+                exact
+                activeClassName={styles.active}
+                className={styles.Nav__Item__NavLink}
+                to="/"
+              >
+                Umiejętności
+              </NavLink>
+            </li>
+            <li onClick={fnShowMenu} className={styles.Nav__Item}>
+              <NavLink
+                activeClassName={styles.active}
+                className={styles.Nav__Item__NavLink}
+                to="/projects"
+              >
+                Projekty
+              </NavLink>
+            </li>
+            <li onClick={fnShowMenu} className={styles.Nav__Item}>
+              <NavLink
+                activeClassName={styles.active}
+                className={styles.Nav__Item__NavLink}
+                to="/contact"
+              >
+                Kontakt
+              </NavLink>
+            </li>
+            <li onClick={fnShowMenu} className={styles.Nav__Item}>
+              <NavLink
+                activeClassName={styles.active}
+                className={styles.Nav__Item__NavLink}
+                to="/about_me"
+              >
+                O mnie
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   );
