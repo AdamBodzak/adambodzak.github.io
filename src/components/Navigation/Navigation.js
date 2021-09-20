@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navigation.module.scss";
+import logoAllImage from "../../assets/img/logo.svg";
 
 function App({ showMobileMenu, fnShowMenu }) {
   return (
@@ -9,6 +10,8 @@ function App({ showMobileMenu, fnShowMenu }) {
         styles[showMobileMenu ? "classShowMobileMenu" : null]
       }`}
     >
+      <img className={styles.logoImage} src={logoAllImage} alt="logo" />
+
       <ul className={styles.Nav_List}>
         <li onClick={fnShowMenu} className={styles.Nav__Item}>
           <NavLink
