@@ -1,7 +1,6 @@
 .header {
   display: flex;
   flex-flow: row nowrap;
-  // height: 200px;
   margin: 16px 16px 0 16px;
 
   @media screen and (max-width: 700px) {
@@ -28,7 +27,6 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  // position: relative;
 
   @media screen and (max-width: 700px) {
     padding: 0px;
@@ -43,10 +41,6 @@
     padding-top: 16px;
     display: inline;
   }
-
-  // @media screen and (max-width: 700px) {
-  //   flex-flow: row-reverse nowrap;
-  // }
 }
 .speech {
   left: -70px;
@@ -70,7 +64,6 @@
     background: url("../../assets/img/Speech.svg");
 
     @media screen and (max-width: 700px) {
-      // display: none;
       background: none;
     }
   }
