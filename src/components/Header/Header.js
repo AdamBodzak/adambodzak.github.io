@@ -64,13 +64,13 @@ class Header extends React.Component {
             >
               <p className={styles.greeting}>
                 {isNext
-                  ? "Widzę że spodobały ci się suchary. Jest ich znacznie więcej"
-                  : "Miło że jesteś na mojej stronie zacznijmy od suchara Romana"}
+                  ? "Widzę że spodobały ci się żarty. Jest ich znacznie więcej"
+                  : "Miło że jesteś na mojej stronie zacznijmy..."}
               </p>
               <p className={styles.joke}>{question}</p>
               <p className={styles.joke}>{answer}</p>
               <p className={styles.note}>
-                wylosowałeś {randomNumber + 1} suchar, kliknij i wylosujemy
+                wylosowałeś {randomNumber + 1} żart, kliknij i wylosujemy
                 kolejny, jest ich w sumie {jokes.length}
               </p>
             </div>
