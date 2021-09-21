@@ -1,84 +1,84 @@
 .section {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    font-weight: 700;
-    margin: 72px 16px 72px 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-weight: 700;
+  margin: 32px;
 }
 .header {
-    padding: 0 48px;
-    font-size: 32px;
-    position: relative;
-    box-sizing: content-box;
+  padding: 0 48px;
+  font-size: 32px;
+  position: relative;
+  box-sizing: content-box;
 
-    @media screen and (min-width: 960px) {
-        &::after,
-        &::before {
-            content: '';
-            position: absolute;
-            width: 48px;
-            height: 150px;
-            display: block;
-            top: -5px;
-        }
-
-        &::before {
-            left: 0px;
-            background: url('../../assets/img/bracket_left.svg') no-repeat;
-        }
-        &::after {
-            right: 0px;
-            background: url('../../assets/img/bracket_right.svg') no-repeat;
-        }
+  @media screen and (min-width: 960px) {
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 150px;
+      display: block;
+      top: -5px;
     }
 
-    @media screen and (max-width: 960px) {
-        padding: 12px;
-        color: white;
-        line-height: 40px;
-        background-color: #1070CA;
-        box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.6);
+    &::before {
+      left: 0px;
+      background: url("../../assets/img/bracket_left.svg") no-repeat;
     }
+    &::after {
+      right: 0px;
+      background: url("../../assets/img/bracket_right.svg") no-repeat;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    padding: 12px;
+    color: white;
+    line-height: 40px;
+    background-color: #1070ca;
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.6);
+  }
 }
 .article {
-    padding: 72px 0 72px 0;
-    font-size: 20px;
+  padding: 72px 0 72px 0;
+  font-size: 20px;
 
-    @media screen and (max-width: 1000px) {
-        text-align: justify;
-    }
+  @media screen and (max-width: 1000px) {
+    text-align: justify;
+  }
 }
 .description {
-    display: flex;
-    flex-flow: row nowrap;
-    padding-top: 72px;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 72px;
 }
 .aboutMe {
-    font-size: 20px;
-    text-align: justify;
+  font-size: 20px;
+  text-align: justify;
 }
 .lookImage {
-    margin: 10px;
-    float: right;
-    display: block;
-    width: 249.08px;
-    height: 200px;
+  margin: 10px;
+  float: right;
+  display: block;
+  width: 249.08px;
+  height: 200px;
 
-    @media screen and (max-width: 700px) {
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  @media screen and (max-width: 700px) {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .special {
-    color: #1070CA;
+  color: #1070ca;
 
-    @media screen and (max-width: 960px) {
-        color: #000;
-    }
+  @media screen and (max-width: 960px) {
+    color: #000;
+  }
 }
 .contactMail {
-    align-self: center;
+  align-self: center;
 }

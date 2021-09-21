@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.scss";
-import logoImageAll from "../../assets/img/logoAll.svg";
+import logoTransparent from "../../assets/img/logoTransparent.svg";
 import emailImage from "../../assets/img/email.svg";
 import GitHubIconWhiteImage from "../../assets/img/GitHubIcon_white.svg";
 import linkedinImage from "../../assets/img/Linkedin.svg";
@@ -8,7 +8,7 @@ import linkedinImage from "../../assets/img/Linkedin.svg";
 const Footer = () => (
   <footer className={styles.footer}>
     <div className={styles.logo}>
-      <img className={styles.imageLogo} src={logoImageAll} alt="smol logo" />
+      <img className={styles.imageLogo} src={logoTransparent} alt="smol logo" />
     </div>
 
     <div className={styles.contact}>
