@@ -69,7 +69,10 @@ class Header extends React.Component {
               </p>
               <p className={styles.joke}>{question}</p>
               <p className={styles.joke}>{answer}</p>
-              <p className={styles.note}>kliknij a wylosujemy kolejnego</p>
+              <p className={styles.note}>
+                wylosowałeś {randomNumber + 1} suchar, kliknij i wylosujemy
+                kolejny, jest ich w sumie {jokes.length}
+              </p>
             </div>
           </div>
           <Navigation
