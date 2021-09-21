@@ -43,6 +43,7 @@
   }
 }
 .speech {
+  cursor: pointer;
   left: -70px;
   display: block;
   background-color: #1070ca;
@@ -54,14 +55,16 @@
   position: relative;
   box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.6);
 
-  &::after {
+  &::before {
     position: absolute;
-    bottom: -23px;
+    // bottom: -23px;
+    left: -22px;
+    top: 35px;
     content: "";
     display: block;
-    width: 17px;
-    height: 23px;
-    background: url("../../assets/img/Speech.svg");
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/img/Speech2.svg") no-repeat;
 
     @media screen and (max-width: 700px) {
       background: none;
@@ -80,4 +83,14 @@
 .joke {
   font-weight: 500;
   font-style: italic;
+}
+
+.note {
+  margin-top: 3px;
+  padding-top: 3px;
+  border-top: 1px dotted rgba(209, 208, 208, 0.637);
+  font-size: 12px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: right;
 }

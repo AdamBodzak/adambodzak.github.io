@@ -8,7 +8,14 @@ class Header extends React.Component {
     jokes: [],
     randomNumber: 0,
     showMobileMenu: false,
+    isNext: false,
   };
+
+  randomNextJoke() {
+    this.setState({
+      isNext: true,
+    });
+  }
 
   componentDidMount() {
     this.getJokes();
@@ -39,7 +46,7 @@ class Header extends React.Component {
     });
   };
   render() {
-    const { showMobileMenu, jokes, randomNumber } = this.state;
+    const { showMobileMenu, jokes, randomNumber, isNext } = this.state;
     const question = jokes[randomNumber]?.question;
     const answer = jokes[randomNumber]?.answer;
 
@@ -48,12 +55,21 @@ class Header extends React.Component {
         <img className={styles.avatar} src={avatar} alt={"Avatar"} />
         <div className={styles.wrapper}>
           <div className={styles.welcome}>
-            <div className={styles.speech}>
+            <div
+              onClick={() => {
+                this.randomNumber(jokes);
+                this.randomNextJoke();
+              }}
+              className={styles.speech}
+            >
               <p className={styles.greeting}>
-                Miło że jesteś na mojej stronie zacznijmy od suchara Romana
+                {isNext
+                  ? "Widzę że spodobały ci się suchary. Jest ich znacznie więcej"
+                  : "Miło że jesteś na mojej stronie zacznijmy od suchara Romana"}
               </p>
               <p className={styles.joke}>{question}</p>
               <p className={styles.joke}>{answer}</p>
+              <p className={styles.note}>kliknij a wylosujemy kolejnego</p>
             </div>
           </div>
           <Navigation
