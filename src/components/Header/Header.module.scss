@@ -42,8 +42,8 @@
     display: inline;
   }
 }
+
 .speech {
-  cursor: pointer;
   left: -70px;
   display: block;
   background-color: #1070ca;
@@ -59,7 +59,7 @@
     position: absolute;
     // bottom: -23px;
     left: -22px;
-    top: 35px;
+    top: 20px;
     content: "";
     display: block;
     width: 100%;
@@ -76,8 +76,12 @@
   }
 }
 
-.greeting {
-  padding-bottom: 8px;
+.cursor {
+  cursor: pointer;
+
+  .greeting {
+    padding-bottom: 8px;
+  }
 }
 
 .joke {

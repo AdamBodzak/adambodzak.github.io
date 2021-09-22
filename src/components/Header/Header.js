@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router";
 import Navigation from "../Navigation/Navigation";
 import avatar from "../../assets/img/avatar_300.gif";
 import styles from "./Header.module.scss";
@@ -49,31 +50,40 @@ class Header extends React.Component {
     const { showMobileMenu, jokes, randomNumber, isNext } = this.state;
     const question = jokes[randomNumber]?.question;
     const answer = jokes[randomNumber]?.answer;
+    const { pathname } = this.props.location;
 
     return (
       <header className={styles.header}>
         <img className={styles.avatar} src={avatar} alt={"Avatar"} />
         <div className={styles.wrapper}>
           <div className={styles.welcome}>
-            <div
-              onClick={() => {
-                this.randomNumber(jokes);
-                this.randomNextJoke();
-              }}
-              className={styles.speech}
-            >
-              <p className={styles.greeting}>
-                {isNext
-                  ? "Widzę że spodobały ci się żarty. Jest ich znacznie więcej"
-                  : "Miło że jesteś na mojej stronie zacznijmy..."}
-              </p>
-              <p className={styles.joke}>{question}</p>
-              <p className={styles.joke}>{answer}</p>
-              <p className={styles.note}>
-                wylosowałeś {randomNumber + 1} żart, kliknij i wylosujemy
-                kolejny, jest ich w sumie {jokes.length}
-              </p>
-            </div>
+            {pathname === "/about_me" ? (
+              <div
+                onClick={() => {
+                  this.randomNumber(jokes);
+                  this.randomNextJoke();
+                }}
+                className={`${styles.speech} ${styles.cursor}`}
+              >
+                <p className={styles.greeting}>
+                  {isNext && pathname === "/about_me"
+                    ? "Widzę że spodobały ci się żarty. Jest ich znacznie więcej"
+                    : "Miło że jesteś na mojej stronie zacznijmy..."}
+                </p>
+                <p className={styles.joke}>{question}</p>
+                <p className={styles.joke}>{answer}</p>
+                <p className={styles.note}>
+                  wylosowałeś {randomNumber + 1} żart, kliknij i wylosujemy
+                  kolejny, jest ich w sumie {jokes.length}
+                </p>
+              </div>
+            ) : (
+              <div className={styles.speech}>
+                <p className={styles.greeting}>
+                  Miło że jesteś na mojej stronie zacznijmy...
+                </p>
+              </div>
+            )}
           </div>
           <Navigation
             fnShowMenu={this.handleShowMobileMenu}
@@ -85,4 +95,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);
