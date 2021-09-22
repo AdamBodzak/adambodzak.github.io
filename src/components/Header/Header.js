@@ -51,6 +51,26 @@ class Header extends React.Component {
     const question = jokes[randomNumber]?.question;
     const answer = jokes[randomNumber]?.answer;
     const { pathname } = this.props.location;
+    let speech = "";
+
+    switch (pathname) {
+      case "/":
+        speech =
+          "Miło że jesteś na mojej stronie. Opowiem ci trochę o moich umiejętnościach...";
+        break;
+      case "/projects":
+        speech = "Chciałbym przedstawić ci parę moich projektów...";
+        break;
+      case "/contact":
+        speech =
+          "Możesz znaleźć mnie na GitHub, LinkEdin lub po prostu napisać do mnie...";
+        break;
+      case "/about_me":
+        speech = "Zanim zaczniesz czytać o mnie zacznijmy od żartu...";
+        break;
+      default:
+        break;
+    }
 
     return (
       <header className={styles.header}>
@@ -68,7 +88,7 @@ class Header extends React.Component {
                 <p className={styles.greeting}>
                   {isNext && pathname === "/about_me"
                     ? "Widzę że spodobały ci się żarty. Jest ich znacznie więcej"
-                    : "Miło że jesteś na mojej stronie zacznijmy..."}
+                    : speech}
                 </p>
                 <p className={styles.joke}>{question}</p>
                 <p className={styles.joke}>{answer}</p>
@@ -79,9 +99,7 @@ class Header extends React.Component {
               </div>
             ) : (
               <div className={styles.speech}>
-                <p className={styles.greeting}>
-                  Miło że jesteś na mojej stronie zacznijmy...
-                </p>
+                <p className={styles.greeting}>{speech}</p>
               </div>
             )}
           </div>
